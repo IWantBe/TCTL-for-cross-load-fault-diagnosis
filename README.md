@@ -1,3 +1,4 @@
 # TCTL-for-cross-load-fault-diagnosis
 Python code for TCTL method
+This paper is accept by the International Journal of Machine Learning and Cybernetics.
 the code is coming soon!!
