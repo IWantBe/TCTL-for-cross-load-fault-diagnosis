@@ -5,4 +5,6 @@ For JNU dataset（data_jnu）: The ReadData_JNU_5000.py is for sampling. The CNN
 
 For CWRU dataset（data_cwru）：The ReadData200.py is for sampling. The CNN_C.py is the model for cwru dataset. The mmd.py is used for domain alignment（MK-MMD） and the TCTL_cwru.py is for test model.
 
-I hope my code can help you, you can contact me if you have any questions！
+I hope my code proves helpful to you. Please feel free to reach out if you have any questions!
+
+Postscript：The reference work associated with this work is our previous MDPS at https://github.com/IWantBe/MDPS
