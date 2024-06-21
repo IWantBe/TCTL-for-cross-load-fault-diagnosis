@@ -7,4 +7,8 @@ For CWRU dataset (data_cwru): The ReadData200.py is for sampling. The CNN_C.py i
 
 I hope my code proves helpful to you. Please feel free to reach out if you have any questions!
 
+The citation format: 
+
+Zheng J, Jiang B, Yang C. Proportional periodic sampling for cross-load bearing fault diagnosis[J]. International Journal of Machine Learning and Cybernetics, 2024: 1-13.
+
 Postscript：The reference work associated with this work is our previous MDPS at https://github.com/IWantBe/MDPS
