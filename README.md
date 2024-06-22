@@ -1,4 +1,4 @@
-<img width="635" alt="image" src="https://github.com/IWantBe/TCTL-for-cross-load-fault-diagnosis/assets/35923557/1f81712b-f93f-4b42-a8c0-63bc39721e7c"># TCTL-for-cross-load-fault-diagnosis
+# TCTL-for-cross-load-fault-diagnosis
 This is Python code for our paper. The CWRU dataset is too large, please download it yourself if you are interested！
 
 For JNU dataset (data_jnu): The ReadData_JNU_5000.py is for sampling. The CNN_J.py is the model for jnu dataset. The mmd.py is used for domain alignment（MK-MMD） and the TCTL_jnu.py is for test model.
