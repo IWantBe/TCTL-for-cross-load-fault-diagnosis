@@ -1,0 +1,7 @@
+*.pyc
+
+.conda/*
+.env/*
+
+data_cwru/*
+data_jnu/*
