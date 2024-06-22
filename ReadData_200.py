@@ -2,13 +2,13 @@ from scipy.io import loadmat
 import numpy as np
 import os
 from sklearn import preprocessing  # 0-1编码
-import random
 
+# import random
 
 
 # 用训练集标准差标准化训练集以及测试集
 def scalar_stand(data_x):
-    data_x = data_x.reshape(-1,1)
+    data_x = data_x.reshape(-1, 1)
     # print(data_x.shape)
     scalar = preprocessing.StandardScaler().fit(data_x)
     data_x = scalar.transform(data_x)
@@ -54,8 +54,8 @@ def spilt(data, rate=[0.7, 0.15, 0.15]):  # [[N1],[N2],...,[N10]]
         # print('数据总数为', all_length)
         tra_data.append(slice_data[0:int(all_length * rate[0])])
         # print("训练样本点数", len(tra_data))
-        val_data.append((slice_data[int(all_length * rate[0]):int(all_length * (rate[0]+rate[1]))]))
-        te_data.append(slice_data[int(all_length * (rate[0]+rate[1])):])
+        val_data.append((slice_data[int(all_length * rate[0]):int(all_length * (rate[0] + rate[1]))]))
+        te_data.append(slice_data[int(all_length * (rate[0] + rate[1])):])
         # print("测试样本点数", len(te_data))
     return tra_data, val_data, te_data
 
@@ -67,11 +67,11 @@ def sampling(data_DE, step=210, sample_len=420):
     for i in range(len(data_DE)):  # 遍历10个文件
         all_length = len(data_DE[i])  # 文件中的数据长度
         # print('采样的训练数据总数为', all_length)
-        number_sample = int((all_length - sample_len)/step + 1)  # 样本数
+        number_sample = int((all_length - sample_len) / step + 1)  # 样本数
         # print('采样的训练数据总数为', i)
         # print("number=", number_sample)
         for j in range(number_sample):  # 逐个采样
-            sample_DE.append(data_DE[i][j * step: j * step + sample_len])
+            sample_DE.append(data_DE[i][j * step:j * step + sample_len])
             label.append(lab)
             j += 1
         lab = lab + 1
@@ -95,6 +95,6 @@ if __name__ == "__main__":
     sample_len = 420
     x_train, y_train, x_validate, y_validate, x_test, y_test = get_data(path, rate, step, sample_len)
     print(x_train.shape)  # (2677, 400, 2)
-    print(x_validate.shape) # (330, 400, 2)
+    print(x_validate.shape)  # (330, 400, 2)
     print(x_test.shape)  # (330, 400, 2)
     print(y_train)
