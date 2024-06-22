@@ -5,6 +5,12 @@ For JNU dataset (data_jnu): The ReadData_JNU_5000.py is for sampling. The CNN_J.
 
 For CWRU dataset (data_cwru): The ReadData200.py is for sampling. The CNN_C.py is the model for cwru dataset. The mmd.py is used for domain alignment（MK-MMD） and the TCTL_cwru.py is for test model.
 
+<!-- 代码使用 -->
+If you want to use this code, please
+- download datasets (cwru and jnu) in the code dir, and rename their folder name to `data_cwru` and `data_jnu`.
+- if you want to run model in cwru, run `python TCTL_cwru.py --src 0 --tar 1`, where `--src` can be chosen in 0, 1, 2, 3, and `--tar` can be chosen in 0, 1, 2, 3. Notice that `--src` != `--tar`!
+- if you want to run model in jnu, run `python TCTL_jnu.py --src 600 --tar 800`, where `--src` can be chosen in 600, 800, 1000, and `--tar` can be chosen in 600, 800, 1000. Notice that `--src` != `--tar`!
+
 I hope my code proves helpful to you. Please feel free to reach out if you have any questions!
 
 The citation format: 
